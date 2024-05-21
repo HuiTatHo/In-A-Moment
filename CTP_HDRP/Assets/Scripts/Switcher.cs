@@ -96,17 +96,6 @@ public class Switcher : MonoBehaviour
         }
     }
 
-    // public void DeBuff()
-    // {
-    //     if(isProfile1Active)
-    //     {
-    //     }
-    //     else
-    //     {
-
-    //     }
-    // }
-
         private System.Collections.IEnumerator DebuffCoroutine()
     {
         while (true)
@@ -142,7 +131,6 @@ public class Switcher : MonoBehaviour
     {
         if (switchSFX != null)
         {
-            //AudioSource.PlayClipAtPoint(soundEffect, transform.position);
             audioSource.PlayOneShot(switchSFX);
         }
     }

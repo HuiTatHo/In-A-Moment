@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isMeleeMode = false;
     [SerializeField] private bool isGunMode = false;
 
-    // Additional variable for movement control during attack
 
 
 
@@ -110,29 +109,6 @@ public class PlayerController : MonoBehaviour
             Vector3 movement = new Vector3(moveX, 0f, moveZ);
             movement.Normalize();
 
-
-            // if (Input.GetKeyDown(KeyCode.Alpha1))
-            // {
-
-            //     isMeleeMode = !isMeleeMode;
-
-            //     meleeWeapon.SetActive(isMeleeMode);
-
-            //     animator.SetBool("IsMeleeMode", isMeleeMode);
-            // }
-
-            // if (Input.GetKeyDown(KeyCode.Alpha2))
-            // {
-
-            //     isGunMode = !isGunMode;
-
-            //     gunWeapon.SetActive(isGunMode);
-
-            //     animator.SetBool("IsGunMode", isGunMode);
-            // }
-
-
-
             if (Input.GetKeyDown(KeyCode.Alpha1) && isSwordExists)
             {
                 if (isMeleeMode)
@@ -159,10 +135,6 @@ public class PlayerController : MonoBehaviour
                 StopCharging();
             }
 
-            // if (isCharging)
-            // {
-            //     // 处理充能逻辑
-            // }
 
             if (Input.GetKeyDown(KeyCode.Alpha2) && isGunExists)
             {

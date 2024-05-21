@@ -13,7 +13,7 @@ public class SphereController : MonoBehaviour
     private void ExpandSphere()
     {
         Vector3 initialScale = transform.localScale;
-        Vector3 targetScale = initialScale * 50f; // 设置目标放大倍数
+        Vector3 targetScale = initialScale * 50f; 
 
         StartCoroutine(ScaleOverTime(initialScale, targetScale, destroyDelay));
     }
